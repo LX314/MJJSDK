@@ -8,6 +8,8 @@
 
 #import "MJJViewController.h"
 
+#import <MJJSDK/MJJSDK.h>
+
 @interface MJJViewController ()
 
 @end
