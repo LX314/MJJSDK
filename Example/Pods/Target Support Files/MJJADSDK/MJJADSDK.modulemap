@@ -1,0 +1,6 @@
+framework module MJJADSDK {
+  umbrella header "MJJADSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
