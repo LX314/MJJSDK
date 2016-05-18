@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'MJADSDK_Example' do
+  pod 'MJADSDK', :path => '../'
+
+  target 'MJADSDK_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end
