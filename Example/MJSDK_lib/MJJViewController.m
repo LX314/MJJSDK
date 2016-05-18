@@ -8,6 +8,8 @@
 
 #import "MJJViewController.h"
 
+#import <MJSDK_lib/MJADSDK.h>
+
 @interface MJJViewController ()
 
 @end
@@ -18,6 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    CGRect frame = kMainScreen;
 }
 
 - (void)didReceiveMemoryWarning

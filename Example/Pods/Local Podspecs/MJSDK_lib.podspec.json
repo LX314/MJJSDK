@@ -1,0 +1,19 @@
+{
+  "name": "MJSDK_lib",
+  "version": "0.4.0",
+  "summary": "MJSDK_lib summary.",
+  "description": "MJSDK_lib description.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/MJJSDK",
+  "license": "MIT",
+  "authors": {
+    "LX314": "1094426094@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/MJJSDK.git",
+    "tag": "0.4.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MJSDK_lib/Classes/**/*"
+}

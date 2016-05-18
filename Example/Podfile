@@ -4,7 +4,7 @@ target 'MJSDK_lib_Example' do
   pod 'MJSDK_lib', :path => '../'
 
   target 'MJSDK_lib_Tests' do
-    inherit! :search_paths
+    #inherit! :search_paths
 
     pod 'Specta'
   pod 'Expecta'

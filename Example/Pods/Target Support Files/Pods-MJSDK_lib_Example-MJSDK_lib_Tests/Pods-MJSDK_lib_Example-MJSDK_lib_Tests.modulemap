@@ -1,0 +1,6 @@
+framework module Pods_MJSDK_lib_Example_MJSDK_lib_Tests {
+  umbrella header "Pods-MJSDK_lib_Example-MJSDK_lib_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
