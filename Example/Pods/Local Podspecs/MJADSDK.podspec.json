@@ -1,0 +1,19 @@
+{
+  "name": "MJADSDK",
+  "version": "0.1.0",
+  "summary": "A short description of MJADSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/MJADSDK",
+  "license": "MIT",
+  "authors": {
+    "LX314": "1094426094@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/MJADSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MJADSDK/Classes/**/*"
+}

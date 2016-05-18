@@ -1,0 +1,22 @@
+PODS:
+  - Expecta (1.0.5)
+  - MJADSDK (0.1.0)
+  - Specta (1.0.5)
+
+DEPENDENCIES:
+  - Expecta
+  - MJADSDK (from `../`)
+  - Specta
+
+EXTERNAL SOURCES:
+  MJADSDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  MJADSDK: 9cc604727eeb83fe5512701395fcd518d3f34a1f
+  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+
+PODFILE CHECKSUM: e32b064c9c5b4f04e7630a872b03c85cfef92a72
+
+COCOAPODS: 1.0.0
