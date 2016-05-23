@@ -8,7 +8,7 @@ target 'LXTool_Example' do
 
 
   target 'LXTool_Tests' do
-    inherit! :search_paths
+      #inherit! :search_paths
 
     pod 'Specta'
   pod 'Expecta'

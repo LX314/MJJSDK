@@ -20,11 +20,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [LXTool get:@"" params:@{} success:^(NSURLSessionDataTask * _Nonnull dataTask, id  _Nullable responseObject) {
-        //
-    } failure:^(NSURLSessionDataTask * _Nullable dataTask, NSError * _Nonnull error) {
-        //
-    }];
+    [LXTool get];
+//     :@"" params:@{} success:^(NSURLSessionDataTask * _Nonnull dataTask, id  _Nullable responseObject) {
+//        //
+//    } failure:^(NSURLSessionDataTask * _Nullable dataTask, NSError * _Nonnull error) {
+//        //
+//    }];
 }
 
 - (void)didReceiveMemoryWarning
