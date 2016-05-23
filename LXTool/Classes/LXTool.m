@@ -41,9 +41,15 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //
         NSLog(@"成功");
+        if (success) {
+            success(task, responseObject);
+        }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //
         NSLog(@"失败ERROR:%@",error);
+        if (failure) {
+            failure(task, error);
+        }
     }];
 }
 #pragma mark - manager
