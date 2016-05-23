@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E80E96F177DC4B5836E86D3E'
+               BlueprintIdentifier = '16A13715AE17D0AEB143FE2E'
                BlueprintName = 'LXTool'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LXTool.framework'>
