@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
-		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* LXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LXAppDelegate.m */; };
@@ -22,6 +21,9 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		95D553B236CA4D61FAB25533 /* Pods_LXTool_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF60688D310303ADE1729B8 /* Pods_LXTool_Example.framework */; };
+		BE394C681CF2EF8F006942B3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE394C671CF2EF8F006942B3 /* libsqlite3.0.tbd */; };
+		BE394C6A1CF2EFA3006942B3 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE394C691CF2EFA3006942B3 /* libiconv.2.4.0.tbd */; };
+		BE394C6E1CF2EFBA006942B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		EAD4771882BC26C49633B480 /* Pods_LXTool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399493154F51DEADB4EF1EF1 /* Pods_LXTool_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9AAB809A9CB34281ED3251C5 /* Pods-LXTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTool_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXTool_Tests/Pods-LXTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BE394C671CF2EF8F006942B3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		BE394C691CF2EFA3006942B3 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
 		CB83F90B38D14AC47C051582 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F7F812366E2B06FA512C9320 /* LXTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LXTool.podspec; path = ../LXTool.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,8 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE394C6A1CF2EFA3006942B3 /* libiconv.2.4.0.tbd in Frameworks */,
+				BE394C6E1CF2EFBA006942B3 /* UIKit.framework in Frameworks */,
+				BE394C681CF2EF8F006942B3 /* libsqlite3.0.tbd in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
-				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				95D553B236CA4D61FAB25533 /* Pods_LXTool_Example.framework in Frameworks */,
 			);
@@ -117,6 +123,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE394C691CF2EFA3006942B3 /* libiconv.2.4.0.tbd */,
+				BE394C671CF2EF8F006942B3 /* libsqlite3.0.tbd */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -374,6 +382,7 @@
 			files = (
 			);
 			inputPaths = (
+				"",
 			);
 			name = "📦 Copy Pods Resources";
 			outputPaths = (
@@ -516,9 +525,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LXTool/LXTool-Prefix.pch";
 				INFOPLIST_FILE = "LXTool/LXTool-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"LXTool\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -532,9 +551,20 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LXTool/LXTool-Prefix.pch";
 				INFOPLIST_FILE = "LXTool/LXTool-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"LXTool\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

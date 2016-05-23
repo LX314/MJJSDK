@@ -1,7 +1,11 @@
 use_frameworks!
 
 target 'LXTool_Example' do
+    
+    pod 'AFNetworking'
+    
   pod 'LXTool', :path => '../'
+
 
   target 'LXTool_Tests' do
     inherit! :search_paths
