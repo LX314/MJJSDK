@@ -8,6 +8,8 @@
 
 #import "MJViewController.h"
 
+#import "MJBaseVC.h"
+
 @interface MJViewController ()
 
 @end
@@ -18,6 +20,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+- (void)test1 {
+    //[self test1];
+    MJBaseVC *vc = [[MJBaseVC alloc]init];
 }
 
 - (void)didReceiveMemoryWarning

@@ -1,0 +1,22 @@
+{
+  "name": "MJJSDK",
+  "version": "0.5.0",
+  "summary": "MJJSDK summary.",
+  "description": "MJJSDK description.",
+  "homepage": "https://github.com/LX314/MJJSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "LX314": "1094426094@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/LX314/MJJSDK.git",
+    "tag": "0.5.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MJJSDK/Classes/**/*"
+}
