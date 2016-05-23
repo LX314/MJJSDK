@@ -13,6 +13,6 @@
     
 }
 
-- (void)get:(NSString *)url params:(NSDictionary *)params;
+//- (void)get:(NSString *)url params:(NSDictionary *)params;
 
 @end
