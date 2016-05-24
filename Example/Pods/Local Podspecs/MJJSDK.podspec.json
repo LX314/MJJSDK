@@ -1,0 +1,39 @@
+{
+  "name": "MJJSDK",
+  "version": "0.1.0",
+  "summary": "A short description of MJJSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/MJJSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "LX314": "1094426094@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/MJJSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MJJSDK/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.1.0"
+    ],
+    "pop": [
+
+    ],
+    "BlocksKit": [
+
+    ],
+    "SDCycleScrollView": [
+
+    ],
+    "Masonry": [
+
+    ]
+  }
+}

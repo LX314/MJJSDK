@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="whP-gf-Uak">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment version="2352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,14 +14,88 @@
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="111" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koK-Zl-Uz5">
+                                <rect key="frame" x="44" y="350" width="132" height="45"/>
+                                <state key="normal" title="插屏广告(IMG 全屏)"/>
+                                <connections>
+                                    <action selector="btnShowAlertADView:" destination="whP-gf-Uak" eventType="touchUpInside" id="pWf-Yr-hyE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="222" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tq-Wn-Sku">
+                                <rect key="frame" x="212" y="350" width="124" height="45"/>
+                                <state key="normal" title="插屏广告(GL 半屏)"/>
+                                <connections>
+                                    <action selector="btnShowAlertADView:" destination="whP-gf-Uak" eventType="touchUpInside" id="55R-at-iN8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="333" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xll-PB-We3">
+                                <rect key="frame" x="50" y="403" width="120" height="45"/>
+                                <state key="normal" title="Go Next"/>
+                                <connections>
+                                    <action selector="btnShowAlertADView:" destination="whP-gf-Uak" eventType="touchUpInside" id="GGH-SK-zSA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="444" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmd-Hj-4Fe">
+                                <rect key="frame" x="50" y="176" width="120" height="45"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="btnShowAlertADView:" destination="whP-gf-Uak" eventType="touchUpInside" id="mBz-3p-ZxN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="555" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeD-t1-DXz">
+                                <rect key="frame" x="214" y="176" width="120" height="45"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnShowAlertADView:" destination="whP-gf-Uak" eventType="touchUpInside" id="2lq-OF-GJb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nN8-7o-PBW">
+                                <rect key="frame" x="39" y="123" width="120" height="45"/>
+                                <state key="normal" title="IMG"/>
+                            </button>
+                            <button opaque="NO" tag="666" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYN-ZC-t7B">
+                                <rect key="frame" x="50" y="282" width="120" height="45"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="btnShowAlertADView:" destination="whP-gf-Uak" eventType="touchUpInside" id="nny-GI-Dz6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="777" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vr-G1-ewz">
+                                <rect key="frame" x="214" y="282" width="120" height="45"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnShowAlertADView:" destination="whP-gf-Uak" eventType="touchUpInside" id="B7F-hK-VYm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfO-1f-snr">
+                                <rect key="frame" x="39" y="229" width="120" height="45"/>
+                                <state key="normal" title="GL"/>
+                            </button>
+                            <button opaque="NO" tag="888" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6D-Sm-0yj">
+                                <rect key="frame" x="50" y="456" width="120" height="45"/>
+                                <state key="normal" title="应用墙(A)"/>
+                                <connections>
+                                    <action selector="btnShowAlertADView:" destination="whP-gf-Uak" eventType="touchUpInside" id="NS6-iu-Jdu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="999" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqK-oc-ryh">
+                                <rect key="frame" x="214" y="456" width="120" height="45"/>
+                                <state key="normal" title="应用墙(B)"/>
+                                <connections>
+                                    <action selector="btnShowAlertADView:" destination="whP-gf-Uak" eventType="touchUpInside" id="aEo-tU-MhH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="167.5" y="383.5"/>
         </scene>
     </scenes>
 </document>

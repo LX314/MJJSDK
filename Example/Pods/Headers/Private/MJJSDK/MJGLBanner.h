@@ -1,0 +1,1 @@
+../../../../../MJJSDK/Classes/SDK/Banner/MJGLBanner.h
