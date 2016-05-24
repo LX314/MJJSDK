@@ -1,9 +1,9 @@
 {
   "name": "MJJSDK",
-  "version": "0.1.0",
-  "summary": "A short description of MJJSDK.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/MJJSDK",
+  "version": "0.8.0",
+  "summary": "MJJSDK summary.",
+  "description": "MJJSDK description.",
+  "homepage": "https://github.com/LX314/MJJSDK",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "LX314": "1094426094@qq.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/MJJSDK.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/LX314/MJJSDK.git",
+    "tag": "0.8.0"
   },
   "platforms": {
     "ios": "8.0"
