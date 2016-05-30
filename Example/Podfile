@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'MJJSDK_Example' do
   pod 'MJJSDK', :path => '../'
+  
+  pod 'AFNetworking'
 
   target 'MJJSDK_Tests' do
     inherit! :search_paths
