@@ -1,0 +1,77 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Expecta (1.0.5)
+  - Masonry (1.0.0)
+  - MJJSDK (0.11.0):
+    - AFNetworking (~> 3.1.0)
+    - BlocksKit
+    - Masonry
+    - pop
+    - ProtocolBuffers
+    - SDCycleScrollView
+  - pop (1.0.9)
+  - ProtocolBuffers (1.9.10)
+  - SDCycleScrollView (1.64):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - Specta (1.0.5)
+
+DEPENDENCIES:
+  - AFNetworking
+  - BlocksKit
+  - Expecta
+  - Masonry
+  - MJJSDK (from `../`)
+  - pop
+  - ProtocolBuffers
+  - SDCycleScrollView
+  - Specta
+
+EXTERNAL SOURCES:
+  MJJSDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  MJJSDK: ce88286ff7cb0a9d351e8f8649570890266b9dc0
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  ProtocolBuffers: d088180c10072b3d24a9939a6314b7b9bcc2340b
+  SDCycleScrollView: 806fedb9342ab03b58b84442f985517b42c7cbb7
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+
+COCOAPODS: 0.39.0

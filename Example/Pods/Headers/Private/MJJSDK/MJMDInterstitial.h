@@ -1,0 +1,1 @@
+../../../../../MJJSDK/Classes/Interstitial/MJMDInterstitial.h

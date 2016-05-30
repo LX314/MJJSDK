@@ -1,0 +1,1 @@
+../../../../../MJJSDK/Classes/Apps/MJREAppsVC.h

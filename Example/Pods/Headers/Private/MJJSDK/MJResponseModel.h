@@ -1,0 +1,1 @@
+../../../../../MJJSDK/Classes/DataModel/ResponseModel/MJResponseModel.h

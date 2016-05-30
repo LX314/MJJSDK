@@ -1,0 +1,20 @@
+use_frameworks!
+
+target 'MJJSDK_Example' do
+
+    pod "pop"
+    pod "BlocksKit"
+    pod "SDCycleScrollView"
+    pod "AFNetworking"
+    pod "Masonry"
+    pod 'ProtocolBuffers'
+
+  pod 'MJJSDK', :path => '../'
+
+  target 'MJJSDK_Tests' do
+    #inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end

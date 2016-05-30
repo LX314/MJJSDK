@@ -1,0 +1,1 @@
+../../../../../MJJSDK/Classes/DataModel/RequestModel/MJUser.h

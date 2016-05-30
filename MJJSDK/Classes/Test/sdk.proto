@@ -1,0 +1,226 @@
+// Copyright(c) 2016, weimob.com Inc.
+// Author: ZHANG Haojie <haojie.zhang@weimob.com>
+//         ZHOU Lizhi <lizhi.zhou@weimob.com>
+// Last updated: 2016-05-09
+
+package protocol.mjsdk;
+option java_package = "com.weimob.mjsdk";
+option optimize_for = LITE_RUNTIME;
+
+
+message Request {
+  optional string event_id = 1; //请求唯一标示a
+
+  enum TestType {
+    kDevelpoment = 1;
+    kProduction = 2;
+    kDebug = 3;
+  }
+  optional TestType test_type = 2;
+
+
+  message Device {
+    optional string ip = 1;
+    optional string user_agent = 2;
+
+    optional int32 pixel_width = 3;
+    optional int32 pixel_height = 4;
+    optional double physical_size = 5; // screen diagonal size in inches
+
+    optional bool is_flash_enabled = 6;//H5 only
+    optional bool is_js_enabled = 7;//H5 only
+
+    optional string name = 8;    // e.g. "My iPhone"
+    optional string brand = 9;   // 品牌 e.g. "apple"
+    optional string model = 10;  // 型号 e.g. @"iPhone"; @"iPod touch"
+
+    optional string os = 11;    // e.g. @"iOS"
+    optional string os_version = 12; // e.g. @"4.0.0"
+    optional bool is_rooted = 13;
+
+    enum DeviceOrientation {
+      kUnknownDeviceOrientation = 1;
+      kPortrait = 2;            // Device oriented vertically; home button on the bottom
+      kPortraitUpsideDown = 3;  // Device oriented vertically; home button on the top
+      kLandscapeLeft = 4;       // Device oriented horizontally; home button on the right
+      kLandscapeRight = 5;      // Device oriented horizontally; home button on the left
+    }
+    optional DeviceOrientation device_orientation = 14;
+
+    //设备类型
+    enum DeviceType {
+      kUnknownDeviceType = 1;
+      kPhone = 2;
+      kPad = 3;
+      kTV = 4;
+      kPC = 5;
+      kGameConsole = 6;
+      kCarPlay = 7;
+      //kAndroid = 8;
+    }
+    optional DeviceType device_type = 15;
+
+    enum Platform {
+      kIOS = 1;
+      kAndroid = 2;
+    }
+    optional Platform platform = 151;
+
+    message Geo {
+      optional double longitude = 1;
+      optional double latitude = 2;
+    }
+    optional Geo geo = 16;
+
+    /**[MCC 及 MNC 参考](https://en.wikipedia.org/wiki/Mobile_country_code)
+    * ![中国的MNC列表](http://static.open-open.com/lib/uploadImg/20140904/20140904171129_147.png)
+    * China - CN
+    * MCC    MNC    Brand    Operator                Status        Bands (MHz)                                    References and notes
+    * 460    00            China Mobile            Operational    GSM 900/GSM 1800 UMTS (TD-SCDMA) 1880/2010
+    * 460    01            China Unicom            Operational    GSM 900/GSM 1800/ UMTS 2100                    CDMA network sold to China Telecom, WCDMA commercial trial started in May 2009 and in full commercial operation as of October 2009.
+    * 460    02            China Mobile            Operational    GSM 900/GSM 1800/ UMTS (TD-SCDMA) 1880/2010
+    * 460    03            China Telecom            Operational    CDMA 800/cdma evdo 2100
+    * 460    05            China Telecom            Operational
+    * 460    06            China Unicom            Operational    GSM 900/GSM 1800/UMTS 2100
+    * 460    07            China Mobile            Operational    GSM 900/GSM 1800/UMTS (TD-SCDMA) 1880/2010
+    * 460    20            China Tietong            Operational    GSM-R
+    * NA    NA            China Telecom&China Unicom    Operational
+    */
+    enum NetworkConnectionType {
+      kUnknownNetWork = 1;
+      kWifi = 2;
+      kG2 = 3;  // 2G GPRS/EDGE
+      kG3 = 4;  // 3G WCDMA/TD-SCDMA/CDMA2000
+      kG4 = 5;  // 4G LTE
+      kG5 = 6;  // 5G WiMax
+    }
+    optional NetworkConnectionType network_connection_type = 17;
+
+    optional int32 carrier_id = 18;  // carrier id, namely, the MNC code. 0 if connection type is wifi or unknown
+  }
+  optional Device device = 4;
+
+  message App {
+    optional string app_key = 1;
+    // TODO; accomplish this
+  }
+  optional App app = 5;
+
+  message User {
+    // user identifiers
+    // ordered by the credibility of a user
+    optional string phone_number = 1;
+    optional string imei = 2;//Android
+    optional string mac = 3;//Android
+    optional string openuuid = 4;
+    optional string idfa = 5;
+    optional string android_id = 6;
+    // TODO: more
+    optional string app_user_id = 7;//???
+    //#optional string paste_board = 8;
+  }
+  optional User user = 6;
+
+  message SDK {
+    optional string sdk_version = 1; 
+    // TODO: some way to validate the request or anti-fraud 
+    optional int32  timestamp = 2;
+    optional string checkcode = 3;//加密机制
+    // TODO; accomplish this
+  }
+  optional SDK sdk = 7;
+
+
+  message Impression {
+      optional string imp_id = 1;//唯一标示
+      optional string adspace_id = 2;//广告位 ID
+      //TODO
+      optional string ad_count = 3;//the expected A.D number in one time
+    }
+    optional Impression impression = 8;
+  }
+
+message Response {
+  optional string event_id = 1;
+
+  message ImpressionAd {
+
+    optional int32 expression_id = 1;//曝光 ID.(拼接 URL)
+
+    enum ADType {
+      kIMGBanner = 1;
+      kGLBanner = 2;
+      kIMGInterstital = 3;
+      kGLInterstital = 4;
+      kApps = 5;
+      kMDApps = 6;
+    }
+    optional ADType ad_type = 2;
+
+    repeated string show_tracking_urls = 3;//第三方监测
+
+    message BannerAd {
+      // if support js, give an HTTP snippet
+      optional string http_snippet = 1;//invalid
+      // if js is not supported, return a image and a click through url
+      // TODO: more
+
+      enum Type{
+        kIMG = 1;//纯图
+        kGL = 2;//图文
+      }
+      optional Type type = 4;
+
+      //IMG Style
+      optional string img_url = 5;
+
+      //GL Style
+      optional string logo_url = 7;
+      optional string app_nam = 8;
+      optional string app_description = 9;
+
+      //common
+      optional string click_url = 10;//FIX
+
+      //TODO
+      enum ProductType {
+        kLink = 1;
+      }
+      optional ProductType product_type = 11;//download or share.
+
+      optional string btn_url = 12;
+
+      //#crt_size = 13;
+
+
+    }
+    optional BannerAd banner_ads = 4;
+
+    //应用墙
+    message Apps{
+      optional string logo_url = 1;
+      optional string app_nam = 2;
+      optional string app_description = 3;
+
+      enum ProductType {
+        kShare = 1;
+        kLink = 2;
+      }
+      optional ProductType product_type = 4;//download or share.
+
+      optional string btn_url = 5;
+      
+      optional string click_url = 6;//FIX
+    }
+    optional Apps apps = 5;
+
+  }
+  repeated ImpressionAd imp_ads = 2;
+}
+
+//#TODO:
+//#banner|Interstitial|Apps selector.
+//#//上报回流(曝光||点击) - response字段
+//#分享账号
+//#测试机
+//#加密机制
