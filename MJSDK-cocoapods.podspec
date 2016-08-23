@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MJSDK-cocoapods'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'summary of MJSDK-cocoapods.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/LX314/MJSDK'
+  s.homepage         = 'https://github.com/LX314/MJJSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'LX314' => '1094426094@qq.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/MJSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/LX314/MJJSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '7.0'
@@ -38,10 +38,18 @@ description of the pod here.
 
    s.public_header_files = 'MJSDK-cocoapods/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
+
+s.frameworks = 'libicucore'
+s.frameworks = 'libz'
+s.frameworks = 'libstdc++'
+s.frameworks = 'JavaScriptCore'
+s.frameworks = 'CoreTelephony'
+s.frameworks = 'libsqlite3'
+
+s.dependency 'OpenSSL'
 s.dependency 'AFNetworking'
 s.dependency 'Masonry'
 s.dependency 'Mantle'
-s.dependency 'OpenSSL'
 s.dependency 'MBProgressHUD'
 s.dependency 'SSKeychain'
 s.dependency 'ReactiveCocoa', '~>2.0'
