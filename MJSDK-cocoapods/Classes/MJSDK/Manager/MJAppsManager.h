@@ -8,6 +8,8 @@
 
 #import "MJBaseApps.h"
 
+#import "MJPropManager.h"
+
 @interface MJAppsManager : MJBaseApps
 {
     
