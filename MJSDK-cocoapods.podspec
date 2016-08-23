@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MJSDK-cocoapods'
-  s.version          = '1.2.1.4'
+  s.version          = '1.2.1.5'
   s.summary          = 'summary of MJSDK-cocoapods.'
 
 # This description is used to generate tags and improve search results.
@@ -38,10 +38,10 @@ description of the pod here.
 
 #s.compiler_flags = '-DLEVELDB_PLATFORM_POSIX' , '-DOS_MACOSX'
 s.library = 'c++'
-#s.xcconfig = {
-#'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
-#'CLANG_CXX_LIBRARY' => 'libc++'
-#}
+s.xcconfig = {
+'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
+'CLANG_CXX_LIBRARY' => 'libc++'
+}
 
    s.public_header_files = 'MJSDK-cocoapods/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

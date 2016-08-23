@@ -8,7 +8,7 @@
 
 #import "Encrypt.h"
 
-#include "gcipher.hh"
+#include "gcipher.h"
 #include "Base64.h"
 
 @implementation Encrypt

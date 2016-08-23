@@ -4,7 +4,7 @@
 // for more information, plz go through
 // https://developers.google.com/ad-exchange/rtb/response-guide/decrypt-advertising-id
 //#include "common/cipher/gcipher.h"
-#include "gcipher.hh"
+#include "gcipher.h"
 #include <cstring>
 #include <algorithm>
 #include <openssl/ssl.h>
