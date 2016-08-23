@@ -194,7 +194,6 @@
 		4BA19F7DD8F9FDA648137B2CE89E7588 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA717B7D6C89300716E84D020065E07 /* AFNetworkActivityIndicatorManager.m */; };
 		4BABB4C716353500FDF75187D35DAACF /* MTLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A88148C4BCEE9CE93E452E2337C3C37E /* MTLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D36F92CC2037423B63D9426AEE27D99 /* NSString+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D3548500985082A304991A2D8DA269 /* NSString+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D5E707E2B12A72AAA2F45ABDCEB833E /* gcipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 262DFBC3CDEF212C82B59215D53F088C /* gcipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E8D35F6B8ECD8B38C2F3A40C810717F /* RACmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFF521D36DF9809428573AF6DE036A5 /* RACmetamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FC19198C1B20A00194E90F1DA6C05A6 /* MJShareFifth.h in Headers */ = {isa = PBXBuildFile; fileRef = B61988BDFB3F1934269524A884FE4C35 /* MJShareFifth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		521D2F28F99C10F8944EF016872AD12B /* NSObject+RACPropertySubscribing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F4F82E9941E3982E9AB5272B1545 /* NSObject+RACPropertySubscribing.m */; };
@@ -435,6 +434,7 @@
 		BDD210D7537DD15CFE59AE126005E5F8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DAE4347F3DBD7C903D5AC80D64ADB1 /* MASLayoutConstraint.m */; };
 		BE024118D329F8F566BD1811A1DC16CB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B16CF253410C753F740F280B03454 /* MASConstraint.m */; };
 		BE6FC1C13CBF4FFBA35E480214B47877 /* MJGLInline.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AB5E529DD780B12CB8AFA7546354EBE /* MJGLInline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEF5BB951D6C4594000CC196 /* gcipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 262DFBC3CDEF212C82B59215D53F088C /* gcipher.h */; };
 		C0415604C93F37AA8E6FD5D436A19A6F /* MJRE.h in Headers */ = {isa = PBXBuildFile; fileRef = 9226B539432F7118F697B941902D98BF /* MJRE.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0B7827E6FEB64AEA58656D1DE343E63 /* NSDictionary+MTLMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A766E9BB9BE6C7822E09D884369EC14 /* NSDictionary+MTLMappingAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C0CB77780B72301763CA75102E046B28 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BECF703F01CA1197A7FD319E079172 /* Security.framework */; };
@@ -2822,7 +2822,6 @@
 				6F70EDFC2BB5E1D4814742C6AFD00AC5 /* Base64.h in Headers */,
 				B3952F38D84E0518133FE981EB782423 /* Colours.h in Headers */,
 				AC4644D2C9AD7B4E733CC93A6BE986A2 /* Encrypt.h in Headers */,
-				4D5E707E2B12A72AAA2F45ABDCEB833E /* gcipher.h in Headers */,
 				33CCCA0B9AE25EE1174D641A101AEA97 /* LXIPManager.h in Headers */,
 				7365AC496538ED4336D7D602026AFBCE /* LXLocationManager.h in Headers */,
 				E65CC071186C1C7430913E5C2FEEFE86 /* LXNetWorking.h in Headers */,
@@ -2860,6 +2859,7 @@
 				FC625AE8FC293AAE14C591E1F913656F /* MJIMGBanner.h in Headers */,
 				90A53100CE04DFE7EE5F689D38BA592F /* MJIMGInline.h in Headers */,
 				6B3D1166E8682370C72DE17FB68C8DFA /* MJIMGInterstitial.h in Headers */,
+				BEF5BB951D6C4594000CC196 /* gcipher.h in Headers */,
 				73095834BB93E486A228EE5596168641 /* MJImpAds.h in Headers */,
 				65EBC608A797B05EAB40AF0353D939BC /* MJInlineManager.h in Headers */,
 				462189E5B79F7B4BAED2B3181B36A1C9 /* MJInterstitialManager.h in Headers */,

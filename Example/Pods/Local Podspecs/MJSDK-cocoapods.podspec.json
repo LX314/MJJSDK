@@ -27,6 +27,9 @@
   "public_header_files": "MJSDK-cocoapods/Classes/**/*.h",
   "frameworks": "libsqlite3",
   "dependencies": {
+    "OpenSSL": [
+
+    ],
     "AFNetworking": [
 
     ],
@@ -34,9 +37,6 @@
 
     ],
     "Mantle": [
-
-    ],
-    "OpenSSL": [
 
     ],
     "MBProgressHUD": [
